@@ -1,0 +1,106 @@
+name: fitpulse
+
+description: "A stylish fitness tracker app."
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Icons
+  cupertino_icons: ^1.0.8
+
+  # State Management
+  provider: ^6.1.5+1
+
+  # Charts
+  fl_chart: ^1.0.0
+
+  # Date & Number Formatting
+  intl: ^0.20.2
+
+  # Local Storage
+  shared_preferences: ^2.5.3
+
+  # Animations
+  lottie: ^3.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+  # App Icon
+  flutter_launcher_icons: ^0.14.4
+
+  # Splash Screen
+  flutter_native_splash: ^2.4.6
+
+flutter:
+
+  uses-material-design: true
+
+  # --------------------------------
+  # ASSETS
+  # --------------------------------
+
+  assets:
+    - assets/icons/
+    - assets/images/
+    - assets/lottie/
+
+  # --------------------------------
+  # FONTS
+  # --------------------------------
+
+  fonts:
+    - family: AnekLatin
+      fonts:
+        - asset: assets/fonts/AnekLatin-Regular.ttf
+        - asset: assets/fonts/AnekLatin-Light.ttf
+          weight: 300
+
+
+# --------------------------------
+# APP ICON
+# --------------------------------
+
+flutter_launcher_icons:
+
+  android: true
+  ios: true
+
+  image_path: "assets/icons/icon.png"
+
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "assets/icons/icon.png"
+
+  min_sdk_android: 21
+
+
+# --------------------------------
+# SPLASH SCREEN
+# --------------------------------
+
+flutter_native_splash:
+
+  color: "#FFFFFF"
+
+  image: "assets/images/splash.png"
+
+  android: true
+  ios: true
+  web: true
+
+  android_12:
+    color: "#FFFFFF"
+    image: "assets/images/splash.png"
+
+  fullscreen: true
